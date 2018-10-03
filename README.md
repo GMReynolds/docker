@@ -21,3 +21,4 @@ To List the running containers:
 ```
 docker ps
 ```
+**Dockerfile** = file defining what occurs within the containers environment.
