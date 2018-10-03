@@ -1,5 +1,5 @@
 # docker
-A repository containing the project files and notes for the docker projects I have worked on
+A repository containing the project files and notes for the docker projects I have worked on.
 
 ## Main Concepts of docker
 Used to develop deploy deploy and run applications with containers.
@@ -21,4 +21,15 @@ To List the running containers:
 ```
 docker ps
 ```
+### Writing Dockerfiles
 **Dockerfile** = file defining what occurs within the containers environment.
+* Image consists of read-only layers (each represents a dockerfile instructions).
+* Layers are stacked and each one is a delta of chnages from previous layer.
+
+Each instruction creates one layer:
+* ```FROM``` creates a layer from the docker image.
+* ```COPY``` add files from the docker clients current directory.
+* ```RUN``` builds your application with ```make```.
+* ```CMD``` specifies what command to run within the container.
+
+#### Best Practices/ guidelines
